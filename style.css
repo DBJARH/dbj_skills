@@ -112,6 +112,13 @@ code {
 
 a { color: var(--accent); }
 
+blockquote {
+  border-left: 3px solid var(--border);
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  color: var(--muted);
+}
+
 footer.site-footer {
   text-align: center;
   color: var(--muted);
