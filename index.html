@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBJ METHOD Skills</title>
+<meta name="description" content="Direct mapping to AI Readiness — DBJ.METHOD encoded as Claude Skills.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/">DBJ METHOD Skills</a>
+  <nav class="site-nav">
+    <a href="/dbj-taxonomy.html">Taxonomy</a>
+    <a href="/dbj-bpt.html">BPT</a>
+    <a href="/dbj-cmm.html">CMM</a>
+    <a href="/dbj-adm.html">ADM</a>
+    <a href="https://method.dbj.org">DBJ Method &#8599;</a>
+  </nav>
+</header>
+
+<main>
+  <img class="banner" src="/images/banner.png" alt="DBJ.METHOD engagement architecture">
+
+  <h1>DBJ METHOD Skills</h1>
+  <p class="subtitle">Direct mapping to AI Readiness</p>
+
+  <h2>Intent</h2>
+  <p>
+    This site encodes DBJ.METHOD — the enterprise architecture methodology
+    authored by Dušan Jovanović (DBJ), TOGAF-registered since November 2011 —
+    as Claude Skills, so that any Claude instance can apply the method
+    consistently, using official terminology with no reinterpretation, instead
+    of relying on ad-hoc explanation each time.
+  </p>
+  <p>
+    Each skill is a self-contained layer of the method, kept deliberately
+    separate rather than merged, because the source material itself treats
+    them as distinct:
+  </p>
+
+  <div class="skills-grid">
+    <a class="skill-card" href="/dbj-taxonomy.html">
+      <h3>dbj-taxonomy</h3>
+      <p>Where does a concern sit? (4 Categories × 4 Capabilities)</p>
+    </a>
+    <a class="skill-card" href="/dbj-bpt.html">
+      <h3>dbj-bpt</h3>
+      <p>Who owns delivery? (Business → Product → Technology loop)</p>
+    </a>
+    <a class="skill-card" href="/dbj-cmm.html">
+      <h3>dbj-cmm</h3>
+      <p>Is the org ready? (5-element maturity scoring, L0–L5)</p>
+    </a>
+    <a class="skill-card" href="/dbj-adm.html">
+      <h3>dbj-adm</h3>
+      <p>How are decisions authorized? (5-step governance wheel)</p>
+    </a>
+  </div>
+
+  <p>
+    Authoritative sources for all four: <a href="https://method.dbj.org">method.dbj.org</a>
+    (taxonomy_core.html, bpt.html, cmm.html, kb/DBJ_ADM/). If a skill and its
+    source page ever disagree, the source page governs — flag the discrepancy
+    rather than silently trusting the skill.
+  </p>
+
+  <h2>How to use</h2>
+  <p>
+    <strong>Claude.ai (web/mobile):</strong> Settings → Capabilities/Skills → Upload
+    custom skill → select one subfolder at a time (dbj-taxonomy, dbj-bpt,
+    dbj-cmm, dbj-adm). Each upload must point at the folder, not the loose
+    SKILL.md file, since the folder name is what disambiguates the four
+    identically-named SKILL.md files.
+  </p>
+  <p>
+    <strong>Claude API:</strong> upload each SKILL.md as skill_data, then reference the
+    resulting skill_id via container.skill_ids in a Messages request using
+    the Code Execution tool.
+  </p>
+  <p>
+    <strong>Claude Code:</strong> register this repository as a plugin marketplace, then
+    install each skill individually.
+  </p>
+  <p>
+    Once installed, no manual invocation is needed — Claude loads a skill's
+    frontmatter (name + description) automatically and pulls in the full
+    body only when a request matches its trigger conditions.
+  </p>
+
+  <h2>Intellectual Property &amp; Licensing</h2>
+  <p>
+    DBJ.METHOD — including the Taxonomy, B-P-T Operating Model, DBJ CMM, and
+    DBJ ADM — is the original work of Dušan Jovanović (DBJ), practicing under
+    DBJ.METHOD / method.dbj.org since 2011.
+  </p>
+  <p>
+    © Dušan Jovanović. All DBJ.METHOD content, terminology, and structure
+    originate from method.dbj.org and are the author's intellectual property.
+    These skill pages are derivative encodings of that source for use with
+    Claude.
+  </p>
+  <p>
+    <strong>Individual / non-commercial use:</strong> licensed under
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.
+    You may share and adapt this material for personal, educational, or
+    non-commercial purposes, provided you give appropriate attribution to
+    Dušan Jovanović / DBJ.METHOD and distribute any derivative works under
+    the same license.
+  </p>
+  <p>
+    <strong>Commercial use:</strong> not covered by the CC BY-SA 4.0 grant above. Any use
+    within a commercial product, service, consulting engagement, or internal
+    enterprise deployment requires separate licensing terms and fees. Contact
+    Dušan Jovanović directly to arrange commercial licensing.
+  </p>
+  <p><em>"High delivery. Low hype." / "Prove first. ROI next."</em></p>
+</main>
+
+<footer class="site-footer">
+  &copy; 2026 Dušan Jovanović · DBJ METHOD Skills
+</footer>
+</body>
+</html>
