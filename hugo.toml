@@ -17,6 +17,7 @@ paginate = 10
   TocOpen = false
   defaultTheme = 'auto'
   homeInfoParams = { Title = 'DBJ METHOD Skills', Content = 'Direct mapping to AI Readiness' }
+  homeBanner = '/images/banner.png'
 
 [params.profileMode]
   enabled = false
